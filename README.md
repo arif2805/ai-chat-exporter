@@ -15,7 +15,7 @@ Each extension is four small files, so you can check what it does in a few minut
 | Folder | Site | Status |
 |---|---|---|
 | [`deepseek/`](deepseek) | chat.deepseek.com | Tested |
-| [`chatgpt/`](chatgpt) | chatgpt.com, chat.openai.com | Experimental, not yet widely tested |
+| [`chatgpt/`](chatgpt) | chatgpt.com, chat.openai.com | Tested |
 | [`claude/`](claude) | claude.ai | Experimental, not yet widely tested |
 | [`gemini/`](gemini) | gemini.google.com | Experimental, page-based (see Limitations) |
 
