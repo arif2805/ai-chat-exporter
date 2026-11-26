@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "ChatGPT Chat Exporter (local)",
+  "version": "1.0.0",
+  "description": "Export the currently open ChatGPT conversation to Markdown or JSON. Runs fully locally.",
+  "permissions": ["activeTab"],
+  "host_permissions": ["https://chatgpt.com/*", "https://chat.openai.com/*"],
+  "action": { "default_popup": "popup.html" },
+  "content_scripts": [
+    {
+      "matches": ["https://chatgpt.com/*", "https://chat.openai.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

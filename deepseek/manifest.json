@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "DeepSeek Chat Exporter (local)",
+  "version": "1.0.0",
+  "description": "Export the currently open DeepSeek chat thread to Markdown or JSON. Runs fully locally.",
+  "permissions": ["activeTab"],
+  "host_permissions": ["https://chat.deepseek.com/*"],
+  "action": { "default_popup": "popup.html" },
+  "content_scripts": [
+    {
+      "matches": ["https://chat.deepseek.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

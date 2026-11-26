@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Gemini Chat Exporter (local)",
+  "version": "1.0.0",
+  "description": "Export the currently open Gemini conversation to Markdown or JSON. Runs fully locally.",
+  "permissions": ["activeTab"],
+  "host_permissions": ["https://gemini.google.com/*"],
+  "action": { "default_popup": "popup.html" },
+  "content_scripts": [
+    {
+      "matches": ["https://gemini.google.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
